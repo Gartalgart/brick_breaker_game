@@ -73,6 +73,7 @@ const collisionDetection = () => {
           if (score == brickColumnCount * brickRowCount) {
             alert("Bravo vous avez gagné !!!");
             document.location.reload();
+            draw();
           }
         }
       }
@@ -140,6 +141,7 @@ const draw = () => {
     } else {
       alert("GAME OVER");
       document.location.reload();
+      draw();
     }
   }
 
